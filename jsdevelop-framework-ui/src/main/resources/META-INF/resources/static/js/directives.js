@@ -36,9 +36,9 @@ function pageTitle($rootScope, $timeout) {
         link: function(scope, element) {
             var listener = function(event, toState, toParams, fromState, fromParams) {
                 // Default title - load on Dashboard 1
-                var title = 'CM | Portal';
+                var title = 'Celesc | Portal';
                 // Create your own title pattern
-                if (toState.data && toState.data.pageTitle) title = 'CM | ' + toState.data.pageTitle;
+                if (toState.data && toState.data.pageTitle) title = 'Celesc | ' + toState.data.pageTitle;
                 $timeout(function() {
                     element.text(title);
                 });
@@ -170,7 +170,7 @@ function iboxToolsFullScreen($timeout) {
 function minimalizaSidebar($timeout) {
     return {
         restrict: 'A',
-        template: '<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="" ng-click="minimalize()"><i class="fa fa-bars"></i></a>',
+        template: '<a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="" ng-click="minimalize()"><i class="fa fa-bars"></i></a>',
         controller: function ($scope, $element) {
             $scope.minimalize = function () {
                 $("body").toggleClass("mini-navbar");

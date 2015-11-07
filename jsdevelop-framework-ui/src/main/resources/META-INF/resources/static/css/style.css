@@ -167,7 +167,7 @@ h5 {
     transition: all 0.5s;
 }
 .nav > li.active {
-    border-left: 4px solid #19aa8d;
+    border-left: 4px solid #a7b1c2;
     background: #293846;
 }
 .nav.nav-second-level > li.active {
@@ -320,7 +320,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 }
 .navbar-fixed-top,
 .navbar-static-top {
-    background: #f3f3f4;
+   
 }
 .fixed-nav #wrapper {
     margin-top: 0;
@@ -1815,6 +1815,26 @@ a.DTTT_button:hover:not(.DTTT_disabled) {
 .i-checks {
     padding-left: 0;
 }
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
 .form-control,
 .single-line {
     background-color: #FFFFFF;
@@ -7850,7 +7870,8 @@ body.md-skin {
 }
 .md-skin .navbar-fixed-top,
 .md-skin .navbar-static-top {
-    background-color: #1ab394 !important;
+    background-color: #f7f7f7;
+	border-bottom: 1px solid #fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .md-skin .navbar-static-side {

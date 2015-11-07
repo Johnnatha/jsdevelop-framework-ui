@@ -3,15 +3,16 @@ app.service('$notify', ['SweetAlert', '$translate',
 	
 	this.success = function(){
 		SweetAlert.swal({
-			title: $translate.instant('OPERACAO_SUCESSO'),
+			title: $translate.instant('mensagem.operacao_sucesso'),
 			type: "success"
 		});
 	};
 	
-	this.error = function(){
+	this.error = function(msgError){
 		SweetAlert.swal({
-			title: $translate.instant('ERROR_INESPERADO'),
-			type: "error"
+			title: $translate.instant('mensagem.erro_inesperado'),
+			type: "error",
+			text: msgError,
 		});
 	};	
 		
